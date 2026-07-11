@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* --- NAV BAR --- */
 nav {
   background-color: rgb(1, 98, 55);
   padding: 15px 0;
@@ -24,14 +25,39 @@ nav {
   z-index: 100;
 }
 
-nav ul {
-  list-style: none;
+/* O conteiner principal que alinha a logo a esquerda e os links a direita */
+.nav-container {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaco entre a logo e os textos */
+}
+
+.nav-logo img {
+  height: 40px; 
+  width: auto;
+  margin: 0
+}
+
+.nav-logo h1 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Alinha os links horizontalmente */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
@@ -39,65 +65,24 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  transition: opacity 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
 }
 
-nav a:hover {
-  opacity: 0.8;
+nav a::after {
+  content: '';
+  position: absolute; 
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(46, 204, 113);
+
+  transform: scaleX(0); /* comeca com largura 0 */ 
+  transform-origin: bottom left; /* da esquerda pra direita */
+  transition: transform 0.3s ease-out;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  min-height: calc(100vh - 200px);
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-section h2 {
-  color: rgb(46, 204, 113);
-  font-size: 28px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid rgb(46, 204, 113);
-  padding-bottom: 10px;
-}
-
-section p {
-  color: rgb(255, 255, 255);
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-footer {
-  background-color: rgb(18, 18, 18);
-  border-top: 2px solid rgb(46, 204, 113);
-  padding: 30px 20px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 10px 0;
-  font-size: 14px;
-}
-
-footer a {
-  color: rgb(46, 204, 113);
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-footer a:hover {
-  opacity: 0.8;
+nav a:hover::after {
+  transform: scaleX(1); /* A linha cresce até o tamanho original (100%) */
 }

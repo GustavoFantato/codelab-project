@@ -1,0 +1,59 @@
+.usp-and-icmc-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.usp-and-icmc-logo img{
+    width: 30%;
+    filter: brightness(0) invert(1); /* Para as imagens ficarem brancas */
+    max-width: 100px;
+}
+
+/* Container generico */
+.container{
+    padding: 20px 10px;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(180, 225, 195), rgb(113, 212, 146));
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: rgb(2, 90, 51);
+    border-style: inset;
+    box-shadow: 0 2px 2px rgb(2, 90, 51);
+}
+
+.about-container img{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.about-content h1{
+    padding: 15px;
+    font-size: 35px;
+    color: rgb(21, 73, 33);
+}
+
+.about-content h2{
+    padding: 0 15px;
+    font-size: 20px;
+    max-width: 900px;
+    margin-left: 0;
+    color: rgb(43, 92, 55);
+}
+
+.about-content p{
+    padding: 10px 15px;
+    color: rgb(21, 73, 33);
+    max-width: 900px;
+}
+

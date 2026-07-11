@@ -106,7 +106,6 @@ footer {
   justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
-  gap: 120px;
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -132,8 +131,8 @@ footer {
 
 .footer-contact-wrapper {
   display: flex;
-  align-items: space;
-  gap: 10px;
+  align-items: center;
+  gap: 30px;
 }
 
 .footer-infos {
@@ -184,4 +183,29 @@ footer {
 
 .social-icons a:hover {
   transform: translateY(-5px);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-medias {
+    border-left: none;
+    border-top: 2px solid rgb(21, 73, 33);
+    padding-left: 0;
+    padding-top: 20px;
+  }
 }

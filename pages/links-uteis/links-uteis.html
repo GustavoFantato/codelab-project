@@ -1,91 +1,132 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PET - ICMC USP</title>
-        <link rel="stylesheet" href="../index/style.css">
-        <link rel="stylesheet" href="equipe.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="/data/assets/icone_pet.png" alt="Ícone PET">
-                    <h1>PET Computação</h1>
-                </div>
-                    <ul class="nav-links">
-                        <li><a href="../index/index.html">Sobre</a></li>
-                        <li><a href="../equipe/equipe.html">Equipe</a></li>
-                        <li><a href="../faq/faq.html">Dúvidas (FAQ)</a></li>
-                        <li><a href="../links-uteis/links-uteis.html">Links Úteis</a></li>
-
-                    </ul>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET - ICMC USP</title>
+    <link rel="stylesheet" href="../index/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/data/assets/icone_pet.png" alt="Ícone PET">
+                <h1>PET Computação</h1>
             </div>
-            </nav>
-        </header>
+                <ul class="nav-links">
+                    <li><a href="../index/index.html">Sobre</a></li>
+                    <li><a href="../equipe/equipe.html">Equipe</a></li>
+                    <li><a href="../faq/faq.html">Dúvidas (FAQ)</a></li>
+                    <li><a href="../links-uteis/links-uteis.html">Links Úteis</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
 
-        <main>
-           
+    <main>
+       <section id="cartilha" class="secao-container cartilha-destaque">
+        <div class="cartilha-conteudo">
+            <h2>Cartilha do PET Computação</h2>
+            <p>Pensando em fazer computação na USP de São Carlos? 🤔 Nós do PET Computação criamos uma cartilha para te ajudar nessa jornada! 💡 Neste material gratuito, você vai encontrar:
+             Notas e redações reais dos aprovados em computação, Todos os meios de ingresso à USP, Dicas de estudo, Informações sobre auxílios estudantis
+            ... e muito mais! 👏</p>
+            <a href="https://www.canva.com/design/DAGzFy-UU4I/gFeertWUyj5V9qmZ7EJ1dA/view?utm_content=DAGzFy-UU4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1be3336ca6#3" class="btn-download">
+                <span>🔍</span> Visualizar Cartilha 
+            </a>
+        </div>
+    </section>
+    
+    <section id="links-uteis" class="container">
+        <h2>Kit Sobrevivência ICMC</h2>
+        <p style="margin-bottom: 25px; color: var(--cor-texto-suave);">Links essenciais para auxiliar a sua jornada acadêmica e o seu desenvolvimento:</p>
         
-
-        </main>
-
-        <footer>
-            <div class="footer-container">
-
-            <!-- Logo e direitos -->    
-            <div class="footer-rights">
-            <img src="/data/assets/logo mono verde escuro horizontal.png" alt="Logo Pet horizontal">
-
-            <p>&copy; 2026 PET Computação - ICMC - USP São Carlos</p>
-            </div>
-
-
-            <div class="footer-contact-wrapper">
-
-            </div>
-            <!-- Contatos -->
-            <div class="footer-infos">
-
-            <div class="footer-info-item">
-
-            <span class="material-symbols-outlined">location_on</span>
-            <p>Av. Trab. São Carlense,<br>
-            400 -   São Carlos/SP <br>
-            Bloco   1, sala 1-103 do ICMC</p>
-
-            </div>
- 
-            <div class="footer-info-item">
-            <span class="material-symbols-outlined">mail</span>
-            <a href="mailto:petcomp@icmc.usp.br">petcomp@icmc.usp.br</a>
-            </div>
-
-            </div>
+        <div class="links-grid">
+            <a href="https://uspdigital.usp.br/jupiterweb/" target="_blank" class="link-util-card">
+                <div class="link-icone-wrapper">
+                    <img src="/data/assets/icone_jupiter.png" alt="JupiterWeb" class="link-img">
+                </div>
+                <div>
+                    <strong>JupiterWeb</strong>
+                    <p>Grade curricular, matrículas e histórico escolar oficial.</p>
+                </div>
+            </a>
             
+            <a href="https://runcodes.icmc.usp.br/" target="_blank" class="link-util-card">
+                <div class="link-icone-wrapper">
+                    <img src="/data/assets/icone_runcodes.png" alt="RunCodes ICMC" class="link-img">
+                </div>
+                <div>
+                    <strong>RunCodes ICMC</strong>
+                    <p>Plataforma oficial de submissão e testes de trabalhos de programação.</p>
+                </div>
+            </a>
 
-            <!-- Redes Sociais -->
+            <a href="https://codeforces.com/" target="_blank" class="link-util-card">
+                <div class="link-icone-wrapper">
+                    <img src="/data/assets/icone_codeforce.png" alt="Codeforces" class="link-img">
+                </div>
+                <div>
+                    <strong>Codeforces</strong>
+                    <p>Treino e simulados para a Maratona de Programação competitiva.</p>
+                </div>
+            </a>
 
+            <a href="https://www.overleaf.com/" target="_blank" class="link-util-card">
+                <div class="link-icone-wrapper">
+                    <img src="/data/assets/icone_overleaf.png" alt="Overleaf (LaTeX)" class="link-img">
+                </div>
+                <div>
+                    <strong>Overleaf (LaTeX)</strong>
+                    <p>Editor online para relatórios, artigos e projetos acadêmicos.</p>
+                </div>
+            </a>
+
+            <a href="https://web.folki.com.br/" target="_blank" class="link-util-card">
+                <div class="link-icone-wrapper">
+                    <img src="/data/assets/icone_folki.png" alt="Folki" class="link-img">
+                </div>
+                <div>
+                    <strong>Folki</strong>
+                    <p>Organize suas atividades, faltas, aulas e notas. Tudo em um só lugar</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-rights">
+                <img src="/data/assets/logo mono verde escuro horizontal.png" alt="Logo Pet horizontal">
+                <p>&copy; 2026 PET Computação - ICMC - USP São Carlos</p>
+            </div>
+            <div class="footer-contact-wrapper"></div>
+            <div class="footer-infos">
+                <div class="footer-info-item">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Av. Trab. São Carlense,<br>
+                    400 -   São Carlos/SP <br>
+                    Bloco   1, sala 1-103 do ICMC</p>
+                </div>
+                <div class="footer-info-item">
+                    <span class="material-symbols-outlined">mail</span>
+                    <a href="mailto:petcomp@icmc.usp.br">petcomp@icmc.usp.br</a>
+                </div>
+            </div>
             <div class="footer-medias">
-
                 <p>Acompanhe o PET!</p>
-                
                 <div class="social-icons">
                     <a href="https://www.instagram.com/petcomputacaousp/"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/petcompusp/?originalSubdomain=br"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/petcompusp"><i class="fab fa-facebook"></i></a>
                     <a href="https://x.com/petcomp_usp"><i class="fab fa-x-twitter"></i></a>
                 </div>
-
-
             </div>
-
-            </div>
-
-        </footer>
-    </body>
-    </html>
+        </div>
+    </footer>
+</body>
+</html>

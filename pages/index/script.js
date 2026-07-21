@@ -4,7 +4,7 @@ let frentesData = []; // (PET.json)
 let infoSobre = {};
 
 function carregarData(){
-    fetch('../../data/PET.json')
+    fetch('./data/PET.json')
         .then(response => response.json())
         .then(data => {
             infoSobre = data.Informacoes; // salva as infos do sobre

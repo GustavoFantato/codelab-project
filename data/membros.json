@@ -1,24 +1,24 @@
 {
     "responsavel": {
         "nome": "Educardo do Vale Simões",
-        "imagem": "https:/imagem-simoes.jpeg"
+        "imagem": "../../data/assets/simoes.jpg"
     },
     "membros": [
         {
             "nome": "João da Silva",
-            "imagem": "..."
+            "imagem": "../../data/assets/perfil.jpg"
         },
          {
             "nome": "João da Silva",
-            "imagem": "..."
+            "imagem": "../../data/assets/perfil.jpg"
         },
          {
             "nome": "João da Silva",
-            "imagem": "..."
+            "imagem": "../../data/assets/perfil.jpg"
         },
          {
             "nome": "João da Silva",
-            "imagem": "..."
+            "imagem": "../../data/assets/perfil.jpg"
         }
     ]
 }

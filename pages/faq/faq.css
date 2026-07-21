@@ -1,4 +1,99 @@
-/* 
-    O estilo base do footer e header ta em style.css
-    O restante da pagina basta fazer aqui
-*/
+.faq-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow .2s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+    list-style: none;
+
+    padding: 20px 24px;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f3d2b;
+
+    user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.8rem;
+    color: #2e7d32;
+    transition: transform .2s ease;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-answer {
+    padding: 0 24px 24px;
+}
+
+.faq-answer p {
+    margin: 0;
+    line-height: 1.7;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+
+    .faq-section {
+        margin: 40px auto;
+    }
+
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item summary {
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 18px 18px;
+    }
+
+}

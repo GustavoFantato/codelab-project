@@ -1,4 +1,123 @@
-/* 
-    O estilo base do footer e header ta em style.css
-    O restante da pagina basta fazer aqui
-*/
+.team-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.responsavel {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 28px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.responsavel .member-photo {
+    flex-shrink: 0;
+}
+
+.responsavel .member-photo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.responsavel .member-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1f3d2b;
+}
+
+.responsavel .member-role {
+    margin-top: 8px;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+
+.member-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: transform .2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+}
+
+.member-photo {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 16px;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f3d2b;
+    line-height: 1.4;
+}
+
+.member-role {
+    margin-top: 6px;
+    font-size: .95rem;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+
+    .responsavel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .member-photo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .responsavel .member-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}

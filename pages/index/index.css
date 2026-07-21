@@ -131,3 +131,27 @@
     color: rgb(4, 36, 6);
 }
 
+
+/* Responsividade para o celular */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; 
+        margin: 20px auto;
+        padding: 15px 10px;
+    }
+
+    .fronts-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .botao-frente {
+        flex: 1 1 40%;
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+}

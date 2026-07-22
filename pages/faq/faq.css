@@ -25,14 +25,24 @@
 
 .faq-item {
     background: #fff;
-    border: 1px solid #e5e5e5;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     overflow: hidden;
-    transition: box-shadow .2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição super smooth */
 }
 
+/* Hover limpo e elegante para o item do FAQ */
 .faq-item:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-color: rgba(46, 125, 50, 0.2);
+}
+
+/* Destaque sutil quando o FAQ estiver aberto */
+.faq-item[open] {
+    border-color: rgba(46, 125, 50, 0.3);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.08);
 }
 
 .faq-item summary {
@@ -50,6 +60,12 @@
     color: #1f3d2b;
 
     user-select: none;
+    transition: color 0.2s ease;
+}
+
+
+.faq-item summary:hover {
+    color: #2e7d32;
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -60,11 +76,16 @@
     content: "+";
     font-size: 1.8rem;
     color: #2e7d32;
-    transition: transform .2s ease;
+    font-weight: 300;
+    line-height: 1;
+    /* Transição suave de rotação para o ícone */
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+
 .faq-item[open] summary::after {
-    content: "−";
+    content: "+";
+    transform: rotate(45deg); 
 }
 
 .faq-answer {
@@ -78,7 +99,6 @@
 }
 
 @media (max-width: 768px) {
-
     .faq-section {
         margin: 40px auto;
     }
@@ -95,5 +115,4 @@
     .faq-answer {
         padding: 0 18px 18px;
     }
-
 }

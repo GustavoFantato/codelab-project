@@ -1,7 +1,7 @@
 .cartilha-destaque {
     
-    background: linear-gradient(135deg, var(--cor-navbar), #0d2818);
-    color: #ffffff;
+    background: linear-gradient(180deg, rgb(180, 225, 195), rgb(180, 225, 195));
+    color: rgb(21, 73, 33);
     text-align: center;
     padding: 60px 20px;
     border-radius: 20px;
@@ -9,7 +9,7 @@
 }
 
 .cartilha-destaque h2 {
-    color: #ffffff !important;
+    color: rgb(21, 73, 33) !important;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -23,7 +23,7 @@
 .cartilha-destaque p {
     max-width: 800px;
     margin: 0 auto 30px auto;
-    color: #e2e8f0;
+    color: rgb(21, 73, 33);
     line-height: 1.6;
 }
 
@@ -32,12 +32,12 @@
     align-items: center;
     gap: 10px;
     background-color: var(--cor-verde-destaque);
-    color: white;
+    color: rgb(63, 100, 54);
     text-decoration: none;
     padding: 14px 30px;
     border-radius: 30px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 4px 15px rgb(65, 107, 66);
     transition: var(--transicao);
 }
 
@@ -54,10 +54,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, rgb(180, 225, 195), rgb(113, 212, 146));
+    background: linear-gradient(180deg, rgb(180, 225, 195), rgb(180, 225, 195));
     border-radius: 20px;
     border: 2px inset rgb(2, 90, 51);
     box-shadow: 0 8px 16px rgba(2, 90, 51, 0.15);
+    color: rgb(21, 73, 33);
 }
 
 .links-grid {
@@ -67,6 +68,7 @@
     width: 100%;
     max-width: 900px;
     margin-top: 20px;
+
 }
 
 .link-util-card {
@@ -81,6 +83,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    
 }
 
 .link-util-card:hover {
@@ -120,6 +123,7 @@
     font-size: 1.05rem;
     color: var(--cor-verde-pet);
     margin-bottom: 4px;
+    color: rgb(21, 73, 33);
 }
 
 .link-util-card p {
@@ -127,4 +131,5 @@
     color: var(--cor-texto-suave);
     line-height: 1.4;
     margin: 0;
+    color: rgb(21, 73, 33);
 }
